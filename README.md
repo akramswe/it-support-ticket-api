@@ -238,23 +238,6 @@ it-support-ticket-api/
 - **Simple schema migration:** An idempotent initial SQL file is adequate for a demo. A real production service would need tracked migration versions and rollback planning.
 - **No auth:** Suitable only as a local portfolio demonstration. A production version would require authentication, authorization, per-user ticket access, rate limiting, observability and secret management.
 
-## Upload to GitHub
-
-1. Create a new **empty** GitHub repository named `it-support-ticket-api` (do not create a remote README, `.gitignore` or license).
-2. In this project directory, run:
-
-```bash
-git init
-git add .
-git commit -m "Build TypeScript Deno support ticket API"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/it-support-ticket-api.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username. GitHub will ask you to sign in as necessary (typically via credential manager or a personal access token, not your account password).
-
-Before putting the project on your CV, run it, understand its behavior, make improvements of your own and confirm the GitHub Actions checks pass. Never commit your real `.env` or passwords.
 
 ## Next improvements
 
